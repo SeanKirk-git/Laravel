@@ -29,8 +29,7 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            // ✅ Use absolute path resolution for @ to fix ENOENT errors on Vercel
-            '@': path.resolve(__dirname, 'resources/js'),
+            '@': '/resources/js',
         },
     },
     esbuild: {
